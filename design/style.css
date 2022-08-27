@@ -1,0 +1,25 @@
+#container {
+  width: 550px;
+  height: 350px;
+  background-color: gray;
+  border-radius: 35px;
+  margin: 150px auto;
+  font-size: 20px;
+  padding: 30px;
+  text-align: center;
+}
+
+#music-img {
+  width: 150px;
+  height: 150px;
+  background-color: #fff;
+  display: inline-block;
+  margin: 20px;
+  float: left;
+}
+
+#music-title {
+  width: 200px;
+  height: 30px;
+  float: right;
+}
