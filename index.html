@@ -5,9 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="design/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
+      rel="stylesheet"
+    />
     <title>Document</title>
   </head>
   <body>
+    <header>
+      <div id="mode-changer">
+        <input id="changer" type="range" value="0" />
+      </div>
+    </header>
+    <div id="clock">
+      <h1>00:00:00</h1>
+    </div>
     <div id="container">
       <div id="music-all-titles">
         <h3 id="music-title">container</h3>
@@ -15,9 +27,14 @@
       </div>
 
       <div id="play-button">
-        <button></button>
-        <button></button>
-        <button></button>
+        <button>
+          <img id="previous" src="/img/previous-track.png" alt="previous" />
+        </button>
+        <button>
+          <img id="play" src="/img/play.png" alt="play" />
+        </button>
+        <button><img id="pause" src="/img/pause.png" alt="pause" /></button>
+        <button><img id="next" src="/img/next-track.png" alt="next" /></button>
       </div>
 
       <div id="volume-controls">
