@@ -4,6 +4,7 @@ body {
   background-size: cover;
   overflow: hidden;
   font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.7px;
 }
 
 header {
@@ -21,13 +22,22 @@ header {
 #mode {
   width: 20px;
   height: 20px;
-  margin-right: 5px;
 }
 
 #changer {
-  width: 30px;
+  width: 35px;
   height: 20px;
   margin-top: 20px;
+  -webkit-appearance: none;
+  border-radius: 25px;
+}
+
+#changer::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: mediumslateblue;
+  width: 20px;
+  height: 20px;
+  border-radius: 30px;
 }
 
 /* clock */

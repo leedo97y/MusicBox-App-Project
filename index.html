@@ -15,7 +15,13 @@
     <header>
       <div id="mode-changer">
         <img id="mode" src="/img/brightness.png" alt="light mode" />
-        <input id="changer" type="range" value="0" />
+        <input
+          id="changer"
+          type="range"
+          minlength="0"
+          maxlength="1"
+          value="0"
+        />
       </div>
     </header>
     <div id="clock">
@@ -40,7 +46,7 @@
 
       <div id="volume-controls">
         <img id="volume-icon" src="img/medium-volume.png" alt="volume" />
-        <input id="volume-range" type="range" name="volume" />
+        <input id="volume-range" type="range" />
       </div>
     </div>
   </body>
