@@ -47,11 +47,23 @@ header {
   height: 100px;
 }
 
+#date {
+  display: inline-block;
+  width: 150px;
+  height: 25px;
+  margin-top: 20px;
+  margin-left: 45px;
+  font-size: 18px;
+}
+
 #clock h1 {
   margin: 40px;
-  margin-right: 20px;
+  margin-top: 5px;
+  margin-right: 60px;
   text-align: center;
   font-size: 50px;
+  letter-spacing: 5px;
+  word-spacing: -5px;
 }
 
 /* music container */
