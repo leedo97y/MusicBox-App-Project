@@ -43,7 +43,7 @@ header {
 /* clock */
 #clock {
   float: right;
-  width: 400px;
+  width: 450px;
   height: 100px;
 }
 
@@ -52,7 +52,7 @@ header {
   width: 150px;
   height: 25px;
   margin-top: 20px;
-  margin-left: 45px;
+  margin-left: 66px;
   font-size: 18px;
 }
 
@@ -62,7 +62,7 @@ header {
   margin-right: 60px;
   text-align: center;
   font-size: 50px;
-  letter-spacing: 5px;
+  letter-spacing: 4px;
   word-spacing: -5px;
 }
 
