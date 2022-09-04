@@ -13,6 +13,7 @@
   </head>
   <body>
     <header>
+      <!-- mode changer part -->
       <div id="mode-changer">
         <img id="mode" src="/img/brightness.png" alt="light mode" />
         <input
@@ -24,15 +25,16 @@
         />
       </div>
     </header>
+    <!-- clock part -->
     <div id="clock">
       <h1>00:00:00</h1>
     </div>
+    <!-- music part -->
     <div id="container">
       <div id="music-all-titles">
         <h3 id="music-title">container</h3>
         <span id="music-detail-title">detail titles</span>
       </div>
-
       <div id="play-button">
         <button>
           <img id="previous" src="/img/previous-track.png" alt="previous" />
@@ -43,7 +45,6 @@
         <button><img id="pause" src="/img/pause.png" alt="pause" /></button>
         <button><img id="next" src="/img/next-track.png" alt="next" /></button>
       </div>
-
       <div id="volume-controls">
         <img id="volume-icon" src="img/medium-volume.png" alt="volume" />
         <input id="volume-range" type="range" />
@@ -52,4 +53,5 @@
   </body>
   <script src="src/app.js"></script>
   <script src="src/clock.js"></script>
+  <script src="src/music.js"></script>
 </html>
