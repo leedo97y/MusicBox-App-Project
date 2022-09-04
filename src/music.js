@@ -23,6 +23,9 @@ const audioList = [
   "audio/The Joint is Jumpin - Joel Cummins.mp3",
 ];
 
+// 오브젝트 형태로 audiolist를 저장해야함
+// 지금꺼 갈아 엎기...
+
 const audio = new Audio();
 console.log();
 
