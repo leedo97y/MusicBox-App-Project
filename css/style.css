@@ -156,13 +156,6 @@ header {
   height: 35px;
 }
 
-#play:hover,
-#previous:hover,
-#pause:hover,
-#next:hover {
-  color: aliceblue;
-}
-
 /* button sound */
 #volume {
   width: 50px;

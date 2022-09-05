@@ -12,7 +12,8 @@ const pause = document.querySelector("#btn-pause");
 const next = document.querySelector("#btn-next");
 
 // volume
-const volume = document.querySelector("#volume-range");
+const volume = document.querySelector("#volume");
+const mute = document.querySelector("#mute");
 
 const audioList = [
   {
@@ -64,7 +65,7 @@ const audioList = [
 // 오브젝트 형태로 audiolist를 저장해야함
 const audio = new Audio(audioList);
 
-let isPlaying = true;
+// let isPlaying = true;
 let musicIndex = 0;
 
 function loadMusic() {
@@ -105,8 +106,23 @@ function onMoveNext() {
   onPlay();
 }
 
+function onClickMute() {
+  mute.classList.add("hidden");
+  volume.classList.remove("hidden");
+  audio.volume = 0;
+}
+
+function onClickVolume() {
+  mute.classList.remove("hidden");
+  volume.classList.add("hidden");
+  audio.volume = 1;
+}
+
 window.addEventListener("load", loadMusic);
 play.addEventListener("click", onPlay);
 pause.addEventListener("click", onPause);
 previous.addEventListener("click", onMovePrev);
 next.addEventListener("click", onMoveNext);
+
+volume.addEventListener("click", onClickVolume);
+mute.addEventListener("click", onClickMute);
