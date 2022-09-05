@@ -69,14 +69,14 @@ header {
 /* music container */
 #container {
   width: 400px;
-  height: 200px;
+  height: 180px;
   background-color: white;
   background-color: rgba(255, 255, 255, 0.15);
   box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.1);
   border-radius: 35px;
   margin: 30px 30px;
   font-size: 20px;
-  padding: 30px;
+  padding: 20px;
   float: left;
 }
 
@@ -96,43 +96,44 @@ header {
 
 #play-button {
   display: inline-block;
-  width: 230px;
-  height: 35px;
-  margin: 15px 95px 5px 105px;
+  width: 400px;
+  height: 50px;
+  margin: 35px 10px 5px 60px;
 }
 
 #play-button button {
   background-color: transparent;
   border: none;
-  margin-right: 40px;
+  margin-right: 25px;
 }
 
+/* button music player */
 #btn-prev {
-  width: 30px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
 }
 
 #btn-play {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 5px;
 }
 
 #btn-pause {
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
   margin-bottom: 5px;
+}
+
+#btn-next {
+  width: 50px;
+  height: 50px;
 }
 
 .hidden {
   display: none;
 }
-
-#btn-next {
-  width: 30px;
-  height: 35px;
-}
-
+/* icon music player */
 #previous {
   width: 30px;
   height: 35px;
@@ -155,20 +156,35 @@ header {
   height: 35px;
 }
 
-#volume-controls {
-  width: 400px;
-  height: 50px;
-  display: inline-block;
-  margin-top: 30px;
+#play:hover,
+#previous:hover,
+#pause:hover,
+#next:hover {
+  color: aliceblue;
 }
 
-#volume-icon {
-  width: 20px;
-  height: 20px;
+/* button sound */
+#volume {
+  width: 50px;
+  height: 50px;
   margin-left: 20px;
 }
 
-#volume-range {
-  width: 320px;
-  margin-left: 10px;
+#mute {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* icon sound */
+#volume-icon {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 7px;
+}
+
+#mute-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 7px;
 }
