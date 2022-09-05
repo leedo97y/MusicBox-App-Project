@@ -45,6 +45,21 @@ const audioList = [
     author: "Joel Cummins",
     source: "audio/The Joint is Jumpin - Joel Cummins.mp3",
   },
+  {
+    name: "Forest Lullabye",
+    author: "Asher Fulero",
+    source: "audio/Forest Lullabye - Asher Fulero.mp3",
+  },
+  {
+    name: "Outlaw's Farewell",
+    author: "Reed Mathis",
+    source: "audio/Outlaw's Farewell - Reed Mathis.mp3",
+  },
+  {
+    name: "Clean and Dance",
+    author: "An Jone",
+    source: "audio/Clean and Dance - An Jone.mp3",
+  },
 ];
 // 오브젝트 형태로 audiolist를 저장해야함
 const audio = new Audio(audioList);
