@@ -59,3 +59,18 @@ _____________________________
 - 가능하면 컴팩트하게?
 4. 날씨 페이지 따로 만들어서 뉴스카드 형식으로 띄워주기
 - 가능하겠지 뭐 함 해보자
+
+뉴스 API 키 : 397503b488b44076a5007c715095e1dd
+
+GET
+https://newsapi.org/v2/top-headlines?country=us&category=b
+
+
+
+
+weather key
+c085c85ef7adac74dca0cca6afe4cb80
+
+https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
+
+http://openweathermap.org/img/wn/10d@2x.png

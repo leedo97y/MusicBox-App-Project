@@ -1,0 +1,115 @@
+/* music container */
+#container {
+  width: 400px;
+  height: 180px;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.15);
+  box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 35px;
+  margin: 30px 30px;
+  font-size: 20px;
+  padding: 20px;
+  float: left;
+}
+
+#music-title {
+  margin: 10px;
+  width: 380px;
+  height: 30px;
+  float: left;
+}
+
+#music-detail-title {
+  margin: 0px 10px;
+  width: 230px;
+  height: 30px;
+  float: left;
+}
+
+#play-button {
+  display: inline-block;
+  width: 400px;
+  height: 50px;
+  margin: 35px 10px 5px 60px;
+}
+
+#play-button button {
+  background-color: transparent;
+  border: none;
+  margin-right: 25px;
+}
+
+/* button music player */
+#btn-prev {
+  width: 50px;
+  height: 50px;
+}
+
+#btn-play {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+#btn-pause {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 5px;
+}
+
+#btn-next {
+  width: 50px;
+  height: 50px;
+}
+
+.hidden {
+  display: none;
+}
+/* icon music player */
+#previous {
+  width: 30px;
+  height: 35px;
+}
+
+#play {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+#pause {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 5px;
+}
+
+#next {
+  width: 30px;
+  height: 35px;
+}
+
+/* button sound */
+#volume {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+#mute {
+  width: 50px;
+  height: 50px;
+  margin-left: 20px;
+}
+
+/* icon sound */
+#volume-icon {
+  width: 23px;
+  height: 23px;
+  margin-bottom: 7px;
+}
+
+#mute-icon {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 7px;
+}

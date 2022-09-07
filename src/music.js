@@ -62,7 +62,7 @@ const audioList = [
     source: "audio/Clean and Dance - An Jone.mp3",
   },
 ];
-// 오브젝트 형태로 audiolist를 저장해야함
+
 const audio = new Audio(audioList);
 
 // let isPlaying = true;
