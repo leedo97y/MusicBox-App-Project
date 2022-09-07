@@ -19,7 +19,7 @@ function date() {
     "Dec",
   ];
 
-  const arrDay = ["Sun", "Mon", "Tue", "Wen", "Thu", "Fri", "Sat"];
+  const arrDay = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
   const month = arrMonth[today.getMonth()];
   const date = JSON.stringify(today.getDate()).padStart(2, "0");
