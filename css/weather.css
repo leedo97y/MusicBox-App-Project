@@ -1,0 +1,41 @@
+#weather-body {
+  width: 350px;
+  height: 300px;
+  float: right;
+  margin-top: 60px;
+  margin-right: 30px;
+  padding: 15px;
+  background-color: aliceblue;
+  border-radius: 25px;
+  text-align: center;
+}
+
+#weather-icon {
+  display: block;
+  margin: 10px auto 5px auto;
+  width: 100px;
+  height: 100px;
+  align-items: center;
+}
+
+#degree {
+  display: inline-block;
+  margin: 5px auto;
+  width: 80px;
+  height: 80px;
+  align-items: center;
+}
+
+#city {
+  display: inline-block;
+  margin: 5px auto;
+  width: 100px;
+  height: 30px;
+}
+
+#rain {
+  display: block;
+  margin: 5px auto;
+  width: 150px;
+  height: 30px;
+}
