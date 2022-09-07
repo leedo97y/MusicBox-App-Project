@@ -60,17 +60,23 @@ _____________________________
 4. 날씨 페이지 따로 만들어서 뉴스카드 형식으로 띄워주기
 - 가능하겠지 뭐 함 해보자
 
-뉴스 API 키 : 397503b488b44076a5007c715095e1dd
+// 뉴스 API 키
+397503b488b44076a5007c715095e1dd
 
-GET
+// GET
 https://newsapi.org/v2/top-headlines?country=us&category=b
 
 
 
 
-weather key
+// weather key
 c085c85ef7adac74dca0cca6afe4cb80
 
+// URL
 https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API key}
 
+// 주소
+https://api.openweathermap.org/data/2.5/weather?lat=37.6332478&lon=127.0699158&appid=c085c85ef7adac74dca0cca6afe4cb80&units=Metric
+
+// 아이콘 주소
 http://openweathermap.org/img/wn/10d@2x.png

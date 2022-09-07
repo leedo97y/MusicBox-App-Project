@@ -3,7 +3,8 @@ const API_KEY = "c085c85ef7adac74dca0cca6afe4cb80";
 const icon = document.querySelector("#weather-icon");
 const degree = document.querySelector("#degree");
 const city = document.querySelector("#city");
-const rain = document.querySelector("#rain");
+const rain = document.querySelector("#rain-humidity");
+const minMax = document.querySelector("#minMax");
 
 function getGeo(position) {
   const lat = position.coords.latitude;
@@ -18,7 +19,10 @@ function getGeo(position) {
       icon.innerHTML = `<img src="${ICON_URL}" />`;
       degree.innerText = `${Math.floor(data.main.temp)}°`;
       city.innerText = data.name;
-      rain.innerText = `${data.clouds.all}%`;
+      rain.innerText = `clouds ${data.clouds.all}%  •  humidity ${data.main.humidity}%`;
+      minMax.innerText = `min ${parseInt(data.main.temp_min)}° / max ${parseInt(
+        data.main.temp_max
+      )}°`;
     });
 }
 
