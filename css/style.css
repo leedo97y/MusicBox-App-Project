@@ -12,34 +12,6 @@ header {
   height: 50px;
 }
 
-/* mode changer */
-#mode-changer {
-  width: 70px;
-  height: 30px;
-  margin-left: 30px;
-}
-
-#mode {
-  width: 20px;
-  height: 20px;
-}
-
-#changer {
-  width: 35px;
-  height: 20px;
-  margin-top: 20px;
-  -webkit-appearance: none;
-  border-radius: 25px;
-}
-
-#changer::-webkit-slider-thumb {
-  -webkit-appearance: none;
-  background-color: mediumslateblue;
-  width: 20px;
-  height: 20px;
-  border-radius: 30px;
-}
-
 /* clock */
 #clock {
   float: right;
