@@ -19,14 +19,12 @@
     <header>
       <!-- mode changer part -->
       <div id="mode-changer">
-        <img id="mode" src="/img/brightness.png" alt="light mode" />
-        <input
-          id="changer"
-          type="range"
-          minlength="0"
-          maxlength="1"
-          value="0"
-        />
+        <button id="btn-mode" class="hidden">
+          <img id="light-mode" src="/img/brightness.png" alt="light mode" />
+        </button>
+        <button id="btn-night" class="show">
+          <img id="night-mode" src="/img/nightMode-icon.png" alt="night-mode" />
+        </button>
       </div>
     </header>
     <!-- clock / date part -->
