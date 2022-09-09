@@ -12,7 +12,7 @@ function backgroundChange() {
   const today = new Date();
   const hour = today.getHours();
 
-  const background = ["day.jpg", "sunset.jpg", "night1.jpg"];
+  const background = ["day.jpg", "sunset.jpg", "night.jpg"];
 
   if (hour >= 6 && hour <= 16) {
     weatherBody.style.backgroundImage = `url("img/${background[0]}")`;
