@@ -1,10 +1,29 @@
 const API_KEY = "c085c85ef7adac74dca0cca6afe4cb80";
 
+const weatherBody = document.querySelector("#weather-body");
+
 const icon = document.querySelector("#weather-icon");
 const degree = document.querySelector("#degree");
 const city = document.querySelector("#city");
 const rain = document.querySelector("#rain-humidity");
 const minMax = document.querySelector("#minMax");
+
+function backgroundChange() {
+  const today = new Date();
+  const hour = today.getHours();
+
+  const background = ["day.jpg", "sunset.jpg", "night1.jpg"];
+
+  if (hour >= 6 && hour <= 16) {
+    weatherBody.style.backgroundImage = `url("img/${background[0]}")`;
+  } else if (hour > 16 && hour <= 19) {
+    weatherBody.style.backgroundImage = `url("img/${background[1]}")`;
+  } else if (hour > 19 || hour < 6) {
+    weatherBody.style.backgroundImage = `url("img/${background[2]}")`;
+  }
+}
+
+backgroundChange();
 
 function getGeo(position) {
   const lat = position.coords.latitude;

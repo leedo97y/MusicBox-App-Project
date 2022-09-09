@@ -1,14 +1,21 @@
 #weather-body {
-  width: 350px;
-  height: 300px;
+  width: 380px;
+  height: 320px;
   float: right;
   margin-top: 60px;
   margin-right: 50px;
-  padding: 15px;
   border-radius: 25px;
   text-align: center;
   box-shadow: 1px 3px 10px 2px rgba(0, 0, 0, 0.1);
-  background-color: rgba(242, 242, 242, 0.7);
+  position: relative;
+}
+
+.layer {
+  background-color: rgba(242, 242, 242, 0.2);
+  margin: 0px;
+  padding: 15px;
+  border-radius: 25px;
+  height: 290px;
 }
 
 #weather-body h3 {
@@ -35,8 +42,8 @@
 
 #city {
   display: inline-block;
-  margin: 5px auto 5px 10px;
-  width: 80px;
+  margin: 5px auto 5px 5px;
+  width: 200px;
   height: 30px;
   font-size: 20px;
 }
