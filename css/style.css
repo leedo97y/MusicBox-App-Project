@@ -2,7 +2,7 @@ body {
   height: 100vh;
   background: url(/img/white-mode.jpg) no-repeat center;
   background-size: cover;
-  overflow: hidden;
+  overflow: scroll;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.7px;
 }
