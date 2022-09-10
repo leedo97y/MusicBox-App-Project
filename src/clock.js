@@ -31,9 +31,15 @@ function date() {
 function clock() {
   const today = new Date();
 
-  const hour = JSON.stringify(today.getHours()).padStart(2, "0");
+  const arrHour = [
+    24, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
+    21, 22, 23,
+  ];
+
+  const hour = JSON.stringify(arrHour[today.getHours()]).padStart(2, "0");
   const minutes = JSON.stringify(today.getMinutes()).padStart(2, "0");
   const seconds = JSON.stringify(today.getSeconds()).padStart(2, "0");
+
   clockBody.innerText = `${hour} : ${minutes} : ${seconds}`;
 }
 
