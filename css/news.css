@@ -2,5 +2,16 @@ footer {
   display: inline-block;
   width: 100%;
   height: 300px;
-  float: bottom;
+  bottom: 0;
+}
+
+#news-body {
+  width: 500px;
+  height: 200px;
+  display: inline-block;
+}
+
+#news-list {
+  width: 500px;
+  height: 200px;
 }

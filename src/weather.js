@@ -20,6 +20,7 @@ function backgroundChange() {
     weatherBody.style.backgroundImage = `url("img/${background[1]}")`;
   } else if (hour > 19 || hour < 6) {
     weatherBody.style.backgroundImage = `url("img/${background[2]}")`;
+    weatherBody.style.color = "#444445";
   }
 }
 
