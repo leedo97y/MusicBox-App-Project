@@ -20,7 +20,7 @@ function backgroundChange() {
     weatherBody.style.backgroundImage = `url("img/${background[1]}")`;
   } else if (hour > 19 || hour < 6) {
     weatherBody.style.backgroundImage = `url("img/${background[2]}")`;
-    weatherBody.style.color = "#444445";
+    weatherBody.style.color = "white";
   }
 }
 
@@ -43,6 +43,9 @@ function getGeo(position) {
       minMax.innerText = `min ${parseInt(data.main.temp_min)}° / max ${parseInt(
         data.main.temp_max
       )}°`;
+      if (city.innerText.length <= 9) {
+        city.style.width = "140px";
+      }
     });
 }
 
