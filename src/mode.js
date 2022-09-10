@@ -7,14 +7,14 @@ const nightModeBtn = document.querySelector("#btn-night");
 function onLightMode() {
   nightModeBtn.classList.remove("hidden");
   lightModeBtn.classList.add("hidden");
-  body.style.backgroundImage = `url("img/white-mode.jpg")`;
+  body.style.backgroundImage = `url("img/whiteMode.jpg")`;
   cBody.style.color = "black";
 }
 
 function onNightMode() {
   lightModeBtn.classList.remove("hidden");
   nightModeBtn.classList.add("hidden");
-  body.style.backgroundImage = `url("img/black-mode.jpg")`;
+  body.style.backgroundImage = `url("img/darkMode.jpg")`;
   cBody.style.color = "white";
 }
 
