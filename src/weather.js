@@ -46,19 +46,6 @@ function getGeo(position) {
       if (city.innerText.length <= 9) {
         city.style.width = "140px";
       }
-
-      const bgWeather = ["rainy.jpg", "thunderstorm.jpg", "snow.jpg"];
-
-      const desc = data.weather[0].description;
-      if (desc === "shower rain" || desc === "rain") {
-        weatherBody.style.backgroundImage = `url("img/${bgWeather[0]}")`;
-      }
-      if (desc === "thunderstorm") {
-        weatherBody.style.backgroundImage = `url("img/${bgWeather[1]}")`;
-      }
-      if (desc === "snow") {
-        weatherBody.style.backgroundImage = `url("img/${bgWeather[2]}")`;
-      }
     });
 }
 

@@ -15,6 +15,9 @@ const next = document.querySelector("#btn-next");
 const volume = document.querySelector("#volume");
 const mute = document.querySelector("#mute");
 
+// playlist
+const playlist = document.querySelector("#playlist");
+
 const audioList = [
   {
     name: "Cafe Regrette",
@@ -74,6 +77,43 @@ function loadMusic() {
   detailTitle.innerText = audioList[musicIndex].author;
 }
 
+const ul = document.createElement("ul");
+
+function getPlaylist() {
+  audioList.forEach((music) => {
+    const h4 = document.createElement("h4");
+    const span = document.createElement("span");
+    const li = document.createElement("li");
+
+    li.classList.add("playlist-song");
+    h4.innerText = music.name;
+    span.innerText = music.author;
+
+    li.append(h4);
+    li.append(span);
+    ul.append(li);
+
+    const onPlayMusic = () => {
+      audio.src = music.source;
+      title.innerText = music.name;
+      detailTitle.innerText = music.author;
+
+      play.classList.add("hidden");
+      pause.classList.remove("hidden");
+      audio.play();
+    };
+    const onPauseMusic = () => {
+      play.classList.remove("hidden");
+      pause.classList.add("hidden");
+      audio.pause();
+    };
+
+    li.addEventListener("click", onPlayMusic);
+    pause.addEventListener("click", onPauseMusic);
+  });
+  playlist.append(ul);
+}
+
 function onPlay() {
   play.classList.add("hidden");
   pause.classList.remove("hidden");
@@ -126,3 +166,5 @@ next.addEventListener("click", onMoveNext);
 
 volume.addEventListener("click", onClickVolume);
 mute.addEventListener("click", onClickMute);
+
+getPlaylist();
