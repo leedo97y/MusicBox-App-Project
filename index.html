@@ -27,65 +27,74 @@
       </div>
     </header>
     <!-- clock / date part -->
-    <div id="clock">
-      <span id="date">Oct 24 Tue</span>
-      <h1>00:00:00</h1>
-    </div>
-    <!-- music part -->
-    <div id="container">
-      <div id="music-all-titles">
-        <h3 id="music-title">container</h3>
-        <span id="music-detail-title">detail titles</span>
-      </div>
-      <div id="play-button">
-        <button id="btn-prev">
-          <img
-            id="previous"
-            src="/components/previous-track.png"
-            alt="previous"
-          />
-        </button>
-        <button id="btn-play" class="show">
-          <img id="play" src="/components/play.png" alt="play" />
-        </button>
-        <button id="btn-pause" class="hidden">
-          <img id="pause" src="/components/pause.png" alt="pause" />
-        </button>
-        <button id="btn-next">
-          <img id="next" src="/components/next-track.png" alt="next" />
-        </button>
-        <button id="volume" class="hidden">
-          <img
-            id="volume-icon"
-            src="/components/medium-volume.png"
-            alt="volume"
-          />
-        </button>
-        <button id="mute" class="show">
-          <img id="mute-icon" src="/components/mute.png" alt="mute" />
-        </button>
-      </div>
-      <span id="playlist-title"
-        >Playlist&nbsp;
-        <span id="smaller-title">
-          | &nbsp; You can only use Play & Pause button</span
-        ></span
-      >
-      <hr id="line-middle" />
-      <div id="playlist"></div>
-    </div>
-    <div id="weather-container">
-      <div id="weather-body">
-        <div class="layer">
-          <h3>Today's Weather</h3>
-          <div id="weather-icon"></div>
-          <span id="degree"></span>
-          <span id="city"></span>
-          <span id="rain-humidity"></span>
-          <span id="minMax"></span>
+    <main>
+      <div id="clock-container">
+        <div id="clock">
+          <span id="date">Oct 24 Tue</span>
+          <h1>00:00:00</h1>
         </div>
       </div>
-    </div>
+
+      <!-- music part -->
+      <div id="music-container">
+        <div id="container">
+          <div id="music-all-titles">
+            <h3 id="music-title">container</h3>
+            <span id="music-detail-title">detail titles</span>
+          </div>
+          <div id="play-button">
+            <button id="btn-prev">
+              <img
+                id="previous"
+                src="/components/previous-track.png"
+                alt="previous"
+              />
+            </button>
+            <button id="btn-play" class="show">
+              <img id="play" src="/components/play.png" alt="play" />
+            </button>
+            <button id="btn-pause" class="hidden">
+              <img id="pause" src="/components/pause.png" alt="pause" />
+            </button>
+            <button id="btn-next">
+              <img id="next" src="/components/next-track.png" alt="next" />
+            </button>
+            <button id="volume" class="hidden">
+              <img
+                id="volume-icon"
+                src="/components/medium-volume.png"
+                alt="volume"
+              />
+            </button>
+            <button id="mute" class="show">
+              <img id="mute-icon" src="/components/mute.png" alt="mute" />
+            </button>
+          </div>
+          <span id="playlist-title"
+            >Playlist&nbsp;
+            <span id="smaller-title">
+              | &nbsp; You can only use Play & Pause button</span
+            ></span
+          >
+          <hr id="line-middle" />
+          <div id="playlist"></div>
+        </div>
+      </div>
+
+      <!-- weather part -->
+      <div id="weather-container">
+        <div id="weather-body">
+          <div class="layer">
+            <h3>Today's Weather</h3>
+            <div id="weather-icon"></div>
+            <span id="degree"></span>
+            <span id="city"></span>
+            <span id="rain-humidity"></span>
+            <span id="minMax"></span>
+          </div>
+        </div>
+      </div>
+    </main>
   </body>
   <script src="src/mode.js"></script>
   <script src="src/clock.js"></script>

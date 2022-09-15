@@ -8,13 +8,25 @@ body {
 }
 
 header {
-  width: 100vh;
+  width: 100vw;
   height: 50px;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+}
+
 /* clock */
+#clock-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
 #clock {
-  float: right;
   width: 400px;
   height: 100px;
   padding-bottom: 30px;
