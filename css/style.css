@@ -4,6 +4,7 @@ body {
   height: 100vh;
   background: url(/img/whiteMode.jpg) no-repeat center;
   background-size: 100vw 100vh;
+  background-attachment: fixed;
   overflow: scroll;
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.7px;
