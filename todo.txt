@@ -72,9 +72,13 @@ _____________________________
 7. 날씨 흐린건 아이콘으로 감지하면 되는데 그걸 어떻게하지
 - 예외적으로 2개만 설정해두고 싶은데
 - 비, 눈
-8. 뉴스 에러가 안난다면 계속 진행해보자.. 
-- 근데 UI를 전체적으로 변경하긴 해야할듯
-- 마크업 작업을 처음부터 정해두고 시작했어야 했다...
+8. air pollution 즉 공기질에 대한 탭을 따로 만들것
+- 배경이 index에 따라 색이 바뀌게 만들것임
+- 미세먼지 탭 시멘틱 먼저 잡고 해야할듯
+- 정확한 수치, 이 수치면 어느 정도인지, 위치에 따라..!
+- 위치, 인덱스, 오존 수치, health advice를 적을것
+- PM2.5 가 미세먼지 수치임
+- 
 
 
 // 뉴스 API 키
@@ -97,3 +101,7 @@ https://api.openweathermap.org/data/2.5/weather?lat=37.6332478&lon=127.0699158&a
 
 // 아이콘 주소
 http://openweathermap.org/img/wn/10d@2x.png
+
+
+// current air pollution data URL
+http://api.openweathermap.org/data/2.5/air_pollution?lat={lat}&lon={lon}&appid={API key}
